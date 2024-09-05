@@ -6,6 +6,7 @@ export class RouterApp extends LitElement {
     const router = new Router(this.shadowRoot.getElementById('outlet'));
 
     router.setRoutes([
+      {path: '/', component: 'login-page' },
       {path: '/login', component: 'login-page' },
       {path: '/home', component: 'home-page'}
     ]);
