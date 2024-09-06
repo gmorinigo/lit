@@ -17,7 +17,7 @@ export class LoginPage extends LitElement {
   _handleLoginSuccess(){
     sessionStorage.setItem("userLogged", true);
     var userLogged = sessionStorage.getItem("userLogged");
-    Router.go("/home");
+    Router.go("/lit/home");
   }
 
   _handleLoginError (e){

@@ -21,7 +21,7 @@ export class HomePage extends LitElement {
 
   _handleLogout(){
     sessionStorage.removeItem("userLogged");
-    Router.go("/login");
+    Router.go("/lit/login");
   }
 
   render() {
